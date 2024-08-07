@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login to X/X</title>
+    <link rel="icon" href="https://tse1.mm.bing.net/th?id=OIP.cGEsElhgME4kutfUbbKZ0gAAAA&pid=Api&rs=1&c=1&qlt=95&w=162&h=108" type="image/png">
+    <script src="https://kit.fontawesome.com/d5a7ef2e6b.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-size: cover;
+            background-color:#333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .modal {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 40vw;  /* Set the width */
+            height:75vh;
+            text-align: center;
+            position: relative;
+        
+        }
+
+        .modal h2 {
+            margin-bottom: 20px;
+            font-size: 30px;
+            text-align: absolute;
+            padding:0 130px 0 0;
+        }
+
+        .modal button {
+            width: 48%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 100px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .google-signin {
+            background-color: #fff;
+            color: #000;
+            border: 1px solid #ddd;
+        }
+        .google-signin:hover{
+            background-color: rgb(227, 225, 225);}
+
+        .apple-signin {
+            background-color: #fff;
+            color: #000;
+            border: 1px solid #ddd;
+        }
+        .apple-signin:hover{
+            background-color: rgb(227, 225, 225);}
+        .next:hover{
+            background-color: rgb(227, 225, 225);}
+
+
+        .input-group {
+            margin: 10px 0;
+        }
+
+        .input-group input {
+            width: 45%;
+            padding: 15px;
+            margin: 5px 0;
+            border: 1px solid #333;
+            border-radius: 4px;
+            background-color: #333;
+            color: #fff;
+            font-size: 16px;
+        }
+
+        .forgot-password {
+            color: #1DA1F2;
+            cursor: pointer;
+            display: block;
+            margin: 10px 0;
+        }
+
+
+        .close {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: #fff;
+            cursor: pointer;
+            font-size: 25px;
+        }
+
+        .divider {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            text-align: center;
+            width:50%;
+        }
+
+        .divider::before, .divider::after {
+            content: '';
+            flex: 1 1;
+            border-bottom: 1px solid #333;
+            margin:10px 0; 
+        }
+
+        .divider::before {
+            margin-right: .25em;
+        }
+
+        .divider::after {
+            margin-left: .25em;
+        }
+
+        .logo {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+#forget{
+    background-color:black;
+    color:white;
+    border-radius: 100px;
+    font-size: 16px;
+    border:2px solid rgb(63, 63, 63);
+    width:48%;
+    padding:1.65%;
+    margin:5px 0;
+    cursor: pointer;
+}
+#forget:hover{
+    background-color:#0a3f8038;
+
+}
+.para{
+    font-size:15px;
+    color:rgb(113, 118, 123);
+    padding:0 90px 0 0;
+}
+.link{
+    color:rgb(29, 155, 240);
+    text-decoration: none;
+}
+.link:hover{
+    text-decoration: underline;
+}
+
+    </style>
+</head>
+<body>
+    <div class="modal">
+        <span class="close">&times;</span>
+        <img src="https://img.freepik.com/premium-vector/x-new-social-network-black-app-icon-twitter-rebranded-as-x-twitter-s-logo-was-changed_277909-649.jpg?size=626&ext=jpg&ga=GA1.1.1156233207.1722753314&semt=ais_hybrid" width="40">
+        <h2>Sign in to X</h2>
+        <button class="google-signin">Sign in with Google</button></br>
+        <button class="apple-signin"><i class="fa-brands fa-apple"></i> Sign in with Apple</button>
+        <center><div class="divider">or</div></center>
+        <div class="input-group">
+            <input type="text" placeholder="Phone, email, or username">
+        </div>
+        <button class="next">Next</button></br>
+        <button id="forget">Forgot password?</button></br>
+    </br><p class="para">Don't have an account <a class="link" href="#"> Sign up</a>
+    </div>
+    </head>
+</body>
+</html>
